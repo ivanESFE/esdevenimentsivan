@@ -1,14 +1,15 @@
-document.body.style.backgroundColor = 'green';
+var botonElement = document.getElementById("botonClick");
+var pElement = document.getElementById("areaContador");
+var contador = 0;
+var reiniciar = document.getElementById("reset")
+var mierda = 0
 
-var boton = document.getElementById('boton')
-boton.addEventListener('mousedown' , blue)
-boton.addEventListener('mouseup' , taronja)
-
-
-function blue() {
-    document.body.style.backgroundColor = 'blue';
+botonElement.onclick = function () {
+       contador++;
+       pElement.textContent = contador;
 }
 
-function taronja() { 
-    document.body.style.backgroundColor = 'orange';
+
+reiniciar.onclick = function(){
+       location.reload()
 }
