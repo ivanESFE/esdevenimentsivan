@@ -1,15 +1,11 @@
-var botonElement = document.getElementById("botonClick");
-var pElement = document.getElementById("areaContador");
-var contador = 0;
-var reiniciar = document.getElementById("reset")
-var mierda = 0
 
-botonElement.onclick = function () {
-       contador++;
-       pElement.textContent = contador;
-}
+function obrirYoutube(event) {
+       var char = event.keyCode;
+       if (char == 27) {
+              window.open("https://youtube.com")
+       }
 
-
-reiniciar.onclick = function(){
-       location.reload()
-}
+   }
+window.onkeydown = obrirYoutube;
+   
+   
