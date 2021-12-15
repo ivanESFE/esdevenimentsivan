@@ -1,11 +1,8 @@
+document.onkeydown=function(tecla){
+       document.getElementById('hola').innerHTML=tecla.key
+}
 
-function obrirYoutube(event) {
-       var char = event.keyCode;
-       if (char == 27) {
-              window.open("https://youtube.com")
-       }
-
-   }
-window.onkeydown = obrirYoutube;
-   
+document.onkeyup=function(){
+       document.getElementById('hola').innerHTML=""
+}
    
